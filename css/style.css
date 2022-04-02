@@ -1,6 +1,7 @@
 @font-face{
     font-family: 'Museo Cyrl';
     font-style: normal;
+    font-display: swap;
     src: url(../fonts/MuseoCyrl300.woff2) format('woff2'),
          url(../fonts/MuseoCyrl300.woff) format('woff'),
          url(../fonts/MuseoCyrl500.woff2) format('woff2'),
@@ -223,6 +224,11 @@ button{
     margin-right: 15px;
 }
 
+.logo-images img {
+    width: 45px;
+    height: 46px;
+}
+
 .logo-name {
     font-weight: 700;
 }
@@ -230,6 +236,11 @@ button{
 .header__maps {
     display: flex;
     align-items: center;
+}
+
+.header__maps img {
+    width: 18px;
+    height: 24px;
 }
 
 .popup-maps {
@@ -270,6 +281,11 @@ button{
 .header__phone-image {
     display: block;
     margin-right: 15px;
+}
+
+.header__phone-image img {
+    width: 18px;
+    height: 24px;
 }
 
 .header__callback-link{
@@ -344,6 +360,8 @@ button{
     top: 50%;
     right: -55px;
     transform: translateY(-50%);
+    width: 95px;
+    height: 75px;
 }
 
 .school-presentation__directions{
@@ -435,6 +453,8 @@ button{
 .video-preview__link img{
     transition: 0.5s;
     transition-property: all;
+    width: 120px;
+    height: 120px;
 }
 
 .video-preview__link img:hover{
@@ -448,7 +468,9 @@ button{
 }
 
 .video-preview__iframe{
+    width: 100%;
     height: 350px;
+    border-width: 0px;
 }
 
 
@@ -895,6 +917,11 @@ button{
     margin: 30px auto 0px;
 }
 
+.pass-classes__image img {
+    width: 55px;
+    height: 46px;
+}
+
 
 
 .school-teacher {
@@ -1037,6 +1064,7 @@ button{
 .photoshoot__video-youtube iframe{
     width: 100%;
     height: 100%;
+    border-width: 0px;
 }
 
 .photoshoot .slick-track .slick-slide{
@@ -1563,6 +1591,11 @@ button{
     margin: 0 10px 5px;
 }
 
+.welcome-school__link img {
+    width: 38px;
+    height: 38px;
+}
+
 .welcome-school__link:hover .welcome-school__social-text{
     color: #ff6e6e;
 }
@@ -1670,6 +1703,7 @@ input[type="tel"]:focus{
 }
 
 .feedback__text{
+    display: block;
     margin-bottom: 5px;
 }
 
