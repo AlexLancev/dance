@@ -3084,6 +3084,7 @@ body.lock {
 
     .trial-lesson{
         background-image: url('../images/background/trial-lessoon_bg.jpg');
+        margin-bottom: 30px;
     }
 
     .popular-questions__heading{
