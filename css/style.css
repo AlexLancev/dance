@@ -2450,6 +2450,7 @@ body.lock {
     text-align: center;
     margin-bottom: 50px;
     position: relative;
+    text-transform: uppercase;
 }
 
 .privacy__heading:after {
