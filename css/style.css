@@ -133,11 +133,6 @@ a{
     color: rgb(255, 50, 102);
 }
 
-.text-pink:hover {
-    text-decoration: underline;
-
-}
-
 .text-yellow {
     color: rgb(245, 225, 148);
 }
@@ -1186,7 +1181,7 @@ button{
 
 .photoshoot__slider {
     max-width: 760px;
-    margin: 0 auto 30px;
+    margin: 0 auto 60px;
 }
 
 .photoshoot__item,
@@ -1241,7 +1236,7 @@ button{
 .photoshoot__video-youtube iframe{
     width: 100%;
     height: 100%;
-    border-width: 0px;
+    border: none;
 }
 
 .photoshoot .slick-track .slick-slide{
@@ -1781,12 +1776,13 @@ button{
 
 .popular-questions__subheading{
     margin-bottom: 10px;
+    font-size: 16px;
 }
 
 .popular-questions__subitem {
     padding-left: 15px;
     margin-bottom: 2px;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 300;
 }
 
@@ -2047,6 +2043,10 @@ input[type="radio"]:focus + .feedback__text:before{
 .feedback__privacy-policy {
     font-size: 15px;
     text-align: center;
+}
+
+.feedback__privacy-policy:hover a {
+    text-decoration: underline;
 }
 
 
@@ -3092,6 +3092,10 @@ body.lock {
         font-size: 14px;
     }
 
+    .popular-questions__item:before {
+        top: 17px;
+    }
+
     .popup__directions{
         padding: 30px;
     }
@@ -3331,10 +3335,6 @@ body.lock {
     .cost-classes__image{
         right: -47px;
         width: 80px;
-    }
-
-    .popular-questions__item:before{
-        top: 13px;
     }
 
     .welcome-school__maps{
