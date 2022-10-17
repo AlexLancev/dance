@@ -33,13 +33,11 @@
                             </p>
                         </a>
 
-
                         <div class="header__maps">
 
-                            <a href="#popup-maps" aria-label="Открыть модальное окно с описанием как к нам пройти"
-                                class="header__maps-image popup-link">
+                            <button data-href="popup-maps" aria-label="Открыть модальное окно с описанием как к нам пройти" class="header__maps-image popup-link">
                                 <img src="images/svg/maps.svg" alt="">
-                            </a>
+                            </button>
 
                             <!-- modal-start -->
                             <div id="popup-maps" class="popup" role="alert">
@@ -50,9 +48,9 @@
                                             class="popup__close close-popup"></button>
 
                                         <div class="popup-maps">
-                                            <h2 class="popup-maps__title">
+                                            <b class="popup-maps__title">
                                                 Как к нам пройти от метро?
-                                            </h2>
+                                            </b>
                                             <p class="popup-maps__text">
                                                 Метро "Авиамоторная", центральный вагон. Из вагона - налево. После
                                                 турникетов и стеклянных дверей идите прямо, затем - второй поворот
@@ -100,9 +98,10 @@
 
                         <div class="header__callback">
 
-                            <a href="#feedback" class="header__callback-link pink-btn btn popup-link"
+                            <button data-href="feedback" class="header__callback-link pink-btn btn popup-link"
                                 aria-label="Открыть модальное окно, для заполнения формы обратной связи">Перезвоните
-                                мне</a>
+                                мне
+                            </button>
 
                             <!-- modal-start -->
                             <div id="feedback" class="popup" role="alert">
@@ -113,7 +112,7 @@
                                             aria-label="Кнопка закрыть модальное окно" type="button"></button>
 
                                         <div class="feedback__popup">
-                                            <form class="feedback__form" action="#" method="post">
+                                            <form class="feedback__form form" action="#" method="post">
 
                                                 <fieldset>
 
@@ -194,18 +193,18 @@
 
                             <div class="school-presentation__info">
 
-                                <p class="school-presentation__text">
+                                <h1 class="school-presentation__text">
                                     Научим <span class="text-yellow">КРАСИВО И УВЕРЕННО ТАНЦЕВАТЬ С НУЛЯ</span> c
                                     топовыми преподавателями Москвы
-                                </p>
+                                </h1>
 
                                 <div class="school-presentation__button">
-                                    <a href="#feedback-classes"
+                                    <button data-href="feedback-classes"
                                         class="school-presentation__trial yellow-btn btn popup-link">
                                         Пробное занятие
                                         <img src="images/school-presentation/gift.webp"
                                             alt="Подарочная картонная коробка розового цвета с бантом">
-                                    </a>
+                                    </button>
 
                                     <!-- modal-start -->
                                     <section id="feedback-classes" class="popup" role="alert">
@@ -216,14 +215,14 @@
                                                     aria-label="закрыть модальное окно кнопка"></button>
 
                                                 <div class="feedback__popup">
-                                                    <form class="feedback__form" action="#" method="post">
+                                                    <form class="feedback__form form" action="#" method="post">
 
                                                         <fieldset>
 
-                                                            <h3 class="feeadback-classes__title">
+                                                            <h2 class="feeadback-classes__title">
                                                                 <span class="text-pink">Записаться</span> на пробное
                                                                 занятие
-                                                            </h3>
+                                                            </h2>
 
                                                             <p class="feedback__heading">
                                                                 Мы свяжемся с вами и уточним, когда вам удобно прийти на
@@ -326,9 +325,9 @@
                                 <figure class="video-preview__image">
                                     <img class="video-preview__bg" src="images/background/video-preview_bg.webp"
                                         alt="Команда девушек танцовщиц">
-                                    <a class="video-preview__link popup-link" href="#video-preview">
+                                    <button data-href="video-preview" class="video-preview__link popup-link">
                                         <img src="images/video-preview/preview-play.png" alt="">
-                                    </a>
+                                    </button>
                                 </figure>
                                 <!-- modal-start -->
                                 <div id="video-preview" class="popup video-preview" role="alert">
@@ -406,22 +405,22 @@
                             <div class="dance-directions__inner">
 
                                 <div class="dance-directions__wrapper">
-                                    <a href="#dance-kids" class="dance-directions__item popup-link">
+                                    <button data-href="dance-kids" class="dance-directions__item popup-link">
 
-                                        <figure class="dance-directions__image">
+                                        <span class="dance-directions__image">
                                             <img src="images/dance-directions/dance-directions_1.webp"
                                                 alt="Фото детей и тренера">
-                                        </figure>
+                                        </span>
 
-                                        <div class="dance-directions__info">
-                                            <p class="dance-directions__text">
+                                        <span class="dance-directions__info">
+                                            <b class="dance-directions__text">
                                                 Танцы для детей
-                                            </p>
+                                            </b>
                                             <span class="dance-directions__span">
                                                 Для детей от 3 до 16 лет
                                             </span>
-                                        </div>
-                                    </a>
+                                        </span>
+                                    </button>
                                     <!-- modal-start -->
                                     <div id="dance-kids" class="popup popup__directions" role="alert">
 
@@ -442,17 +441,17 @@
                                 </div>
 
                                 <div class="dance-directions__wrapper">
-                                    <a href="#lady-dance" class="dance-directions__item popup-link">
-                                        <figure class="dance-directions__image">
+                                    <button data-href="lady-dance" class="dance-directions__item popup-link">
+                                        <span class="dance-directions__image">
                                             <img src="images/dance-directions/dance-directions_2.webp"
                                                 alt="Преподователь Анна Захарова">
-                                        </figure>
-                                        <div class="dance-directions__info">
-                                            <p class="dance-directions__text">
+                                        </span>
+                                        <span class="dance-directions__info">
+                                            <b class="dance-directions__text">
                                                 Lady’s Dance
-                                            </p>
-                                        </div>
-                                    </a>
+                                            </b>
+                                        </span>
+                                    </button>
                                     <!-- modal-start -->
                                     <section id="lady-dance" class="popup popup__directions" role="alert">
 
@@ -509,10 +508,10 @@
                                                                     </li>
                                                                 </ul>
 
-                                                                <a href="#feedback-classes__lady"
+                                                                <button data-href="feedback-classes__lady"
                                                                     class="directions__button pink-btn btn popup-link">
                                                                     Записаться на пробное занятие
-                                                                </a>
+                                                                </button>
 
                                                             </div>
 
@@ -562,10 +561,10 @@
                                                                     </li>
                                                                 </ul>
 
-                                                                <a href="#feedback-classes__lady"
+                                                                <button data-href="feedback-classes__lady"
                                                                     class="directions__button pink-btn btn popup-link">
                                                                     Записаться на пробное занятие
-                                                                </a>
+                                                                </button>
 
                                                             </div>
 
@@ -588,7 +587,7 @@
                                                     aria-label="закрыть модальное окно кнопка"></button>
 
                                                 <div class="feedback__popup">
-                                                    <form class="feedback__form" action="#" method="post">
+                                                    <form class="feedback__form form" action="#" method="post">
 
                                                         <fieldset class="feedback__trial-lesson">
                                                             <h3 class="feeadback-classes__title">
@@ -674,17 +673,17 @@
                                 </div>
 
                                 <div class="dance-directions__wrapper">
-                                    <a href="#hip-hop" class="dance-directions__item popup-link">
-                                        <figure class="dance-directions__image">
+                                    <button data-href="hip-hop" class="dance-directions__item popup-link">
+                                        <span class="dance-directions__image">
                                             <img src="images/dance-directions/dance-directions_3.webp"
                                                 alt="Кристина Мазэре">
-                                        </figure>
-                                        <div class="dance-directions__info">
-                                            <p class="dance-directions__text">
+                                        </span>
+                                        <span class="dance-directions__info">
+                                            <b class="dance-directions__text">
                                                 Hip-Hop
-                                            </p>
-                                        </div>
-                                    </a>
+                                            </b>
+                                        </span>
+                                    </button>
                                     <!-- modal-start -->
                                     <section id="hip-hop" class="popup popup__directions" role="alert">
 
@@ -741,10 +740,10 @@
                                                                     </li>
                                                                 </ul>
 
-                                                                <a href="#feedback-classes__hip-hop"
+                                                                <button data-href="feedback-classes__hip-hop"
                                                                     class="directions__button pink-btn btn popup-link">
                                                                     Записаться на пробное занятие
-                                                                </a>
+                                                                </button>
 
                                                             </div>
 
@@ -767,7 +766,7 @@
                                                     aria-label="закрыть модальное окно кнопка"></button>
 
                                                 <div class="feedback__popup">
-                                                    <form class="feedback__form" action="#" method="post">
+                                                    <form class="feedback__form form" action="#" method="post">
 
                                                         <fieldset class="feedback__trial-lesson">
                                                             <h3 class="feeadback-classes__title">
@@ -847,17 +846,17 @@
                                 </div>
 
                                 <div class="dance-directions__wrapper">
-                                    <a href="#high-heels" class="dance-directions__item popup-link">
-                                        <figure class="dance-directions__image">
+                                    <button data-href="high-heels" class="dance-directions__item popup-link">
+                                        <span class="dance-directions__image">
                                             <img src="images/dance-directions/dance-directions_4.webp"
                                                 alt="Преподователь Юлия Шкуренко">
-                                        </figure>
-                                        <div class="dance-directions__info">
-                                            <p class="dance-directions__text">
+                                        </span>
+                                        <span class="dance-directions__info">
+                                            <b class="dance-directions__text">
                                                 High Heels
-                                            </p>
-                                        </div>
-                                    </a>
+                                            </b>
+                                        </span>
+                                    </button>
                                     <!-- modal-start -->
                                     <section id="high-heels" class="popup popup__directions" role="alert">
 
@@ -914,10 +913,10 @@
                                                                     </li>
                                                                 </ul>
 
-                                                                <a href="#feedback-classes__high-heels"
+                                                                <button data-href="feedback-classes__high-heels"
                                                                     class="directions__button pink-btn btn popup-link">
                                                                     Записаться на пробное занятие
-                                                                </a>
+                                                                </button>
 
                                                             </div>
 
@@ -967,10 +966,10 @@
                                                                     </li>
                                                                 </ul>
 
-                                                                <a href="#feedback-classes__high-heels"
+                                                                <button data-href="feedback-classes__high-heels"
                                                                     class="directions__button pink-btn btn popup-link">
                                                                     Записаться на пробное занятие
-                                                                </a>
+                                                                </button>
 
                                                             </div>
 
@@ -1020,10 +1019,10 @@
                                                                     </li>
                                                                 </ul>
 
-                                                                <a href="#feedback-classes__high-heels"
+                                                                <button data-href="feedback-classes__high-heels"
                                                                     class="directions__button pink-btn btn popup-link">
                                                                     Записаться на пробное занятие
-                                                                </a>
+                                                                </button>
 
                                                             </div>
 
@@ -1073,10 +1072,10 @@
                                                                     </li>
                                                                 </ul>
 
-                                                                <a href="#feedback-classes__high-heels"
+                                                                <button data-href="feedback-classes__high-heels"
                                                                     class="directions__button pink-btn btn popup-link">
                                                                     Записаться на пробное занятие
-                                                                </a>
+                                                                </button>
 
                                                             </div>
 
@@ -1099,7 +1098,7 @@
                                                     aria-label="закрыть модальное окно кнопка"></button>
 
                                                 <div class="feedback__popup">
-                                                    <form class="feedback__form" action="#" method="post">
+                                                    <form class="feedback__form form" action="#" method="post">
 
                                                         <fieldset class="feedback__trial-lesson">
                                                             <h3 class="feeadback-classes__title">
@@ -1188,17 +1187,17 @@
                                 </div>
 
                                 <div class="dance-directions__wrapper">
-                                    <a href="#contemporary" class="dance-directions__item popup-link">
-                                        <figure class="dance-directions__image">
+                                    <button data-href="contemporary" class="dance-directions__item popup-link">
+                                        <span class="dance-directions__image">
                                             <img src="images/dance-directions/dance-directions_5.webp"
                                                 alt="Преподователь Ася Гурина">
-                                        </figure>
-                                        <div class="dance-directions__info">
-                                            <p class="dance-directions__text">
+                                        </span>
+                                        <span class="dance-directions__info">
+                                            <b class="dance-directions__text">
                                                 Contemporary
-                                            </p>
-                                        </div>
-                                    </a>
+                                            </b>
+                                        </span>
+                                    </button>
                                     <!-- modal-start -->
                                     <section id="contemporary" class="popup popup__directions" role="alert">
 
@@ -1255,10 +1254,10 @@
                                                                     </li>
                                                                 </ul>
 
-                                                                <a href="#feedback-classes__contemporary"
+                                                                <button data-href="feedback-classes__contemporary"
                                                                     class="directions__button pink-btn btn popup-link">
                                                                     Записаться на пробное занятие
-                                                                </a>
+                                                                </button>
 
                                                             </div>
 
@@ -1308,10 +1307,10 @@
                                                                     </li>
                                                                 </ul>
 
-                                                                <a href="#feedback-classes__contemporary"
+                                                                <button data-href="feedback-classes__contemporary"
                                                                     class="directions__button pink-btn btn popup-link">
                                                                     Записаться на пробное занятие
-                                                                </a>
+                                                                </button>
 
                                                             </div>
 
@@ -1334,7 +1333,7 @@
                                                     aria-label="закрыть модальное окно кнопка"></button>
 
                                                 <div class="feedback__popup">
-                                                    <form class="feedback__form" action="#" method="post">
+                                                    <form class="feedback__form form" action="#" method="post">
 
                                                         <fieldset class="feedback__trial-lesson">
                                                             <h3 class="feeadback-classes__title">
@@ -1417,17 +1416,17 @@
                                 </div>
 
                                 <div class="dance-directions__wrapper">
-                                    <a href="#jazz-funk" class="dance-directions__item popup-link">
-                                        <figure class="dance-directions__image">
+                                    <button data-href="jazz-funk" class="dance-directions__item popup-link">
+                                        <span class="dance-directions__image">
                                             <img src="images/dance-directions/dance-directions_6.webp"
                                                 alt="Преподователь Дарья Коробицына">
-                                        </figure>
-                                        <div class="dance-directions__info">
-                                            <p class="dance-directions__text">
+                                        </span>
+                                        <span class="dance-directions__info">
+                                            <b class="dance-directions__text">
                                                 Jazz Funk
-                                            </p>
-                                        </div>
-                                    </a>
+                                            </b>
+                                        </span>
+                                    </button>
                                     <!-- modal-start -->
                                     <section id="jazz-funk" class="popup popup__directions" role="alert">
 
@@ -1484,10 +1483,10 @@
                                                                     </li>
                                                                 </ul>
 
-                                                                <a href="#feedback-classes__jazz-funk"
+                                                                <button data-href="feedback-classes__jazz-funk"
                                                                     class="directions__button pink-btn btn popup-link">
                                                                     Записаться на пробное занятие
-                                                                </a>
+                                                                </button>
 
                                                             </div>
 
@@ -1537,10 +1536,10 @@
                                                                     </li>
                                                                 </ul>
 
-                                                                <a href="#feedback-classes__jazz-funk"
+                                                                <button data-href="feedback-classes__jazz-funk"
                                                                     class="directions__button pink-btn btn popup-link">
                                                                     Записаться на пробное занятие
-                                                                </a>
+                                                                </button>
 
                                                             </div>
 
@@ -1590,10 +1589,10 @@
                                                                     </li>
                                                                 </ul>
 
-                                                                <a href="#feedback-classes__jazz-funk"
+                                                                <button data-href="feedback-classes__jazz-funk"
                                                                     class="directions__button pink-btn btn popup-link">
                                                                     Записаться на пробное занятие
-                                                                </a>
+                                                                </button>
 
                                                             </div>
 
@@ -1616,7 +1615,7 @@
                                                     aria-label="закрыть модальное окно кнопка"></button>
 
                                                 <div class="feedback__popup">
-                                                    <form class="feedback__form" action="#" method="post">
+                                                    <form class="feedback__form form" action="#" method="post">
 
                                                         <fieldset class="feedback__trial-lesson">
                                                             <h3 class="feeadback-classes__title">
@@ -1702,17 +1701,17 @@
                                 </div>
 
                                 <div class="dance-directions__wrapper">
-                                    <a href="#club-improvisation" class="dance-directions__item popup-link">
-                                        <figure class="dance-directions__image">
+                                    <button data-href="club-improvisation" class="dance-directions__item popup-link">
+                                        <span class="dance-directions__image">
                                             <img src="images/dance-directions/dance-directions_7.webp"
                                                 alt="Преподователь Дарья Коробицына">
-                                        </figure>
-                                        <div class="dance-directions__info">
-                                            <p class="dance-directions__text">
+                                        </span>
+                                        <span class="dance-directions__info">
+                                            <b class="dance-directions__text">
                                                 Клубная импровизация
-                                            </p>
-                                        </div>
-                                    </a>
+                                            </b>
+                                        </span>
+                                    </button>
                                     <!-- modal-start -->
                                     <section id="club-improvisation" class="popup popup__directions" role="alert">
 
@@ -1769,10 +1768,10 @@
                                                                     </li>
                                                                 </ul>
 
-                                                                <a href="#feedback-classes__club-improvisation"
+                                                                <button data-href="feedback-classes__club-improvisation"
                                                                     class="directions__button pink-btn btn popup-link">
                                                                     Записаться на пробное занятие
-                                                                </a>
+                                                                </button>
 
                                                             </div>
 
@@ -1795,7 +1794,7 @@
                                                     aria-label="закрыть модальное окно кнопка"></button>
 
                                                 <div class="feedback__popup">
-                                                    <form class="feedback__form" action="#" method="post">
+                                                    <form class="feedback__form form" action="#" method="post">
 
                                                         <fieldset class="feedback__trial-lesson">
                                                             <h3 class="feeadback-classes__title">
@@ -1875,17 +1874,17 @@
                                 </div>
 
                                 <div class="dance-directions__wrapper">
-                                    <a href="#strip" class="dance-directions__item popup-link">
-                                        <figure class="dance-directions__image">
+                                    <button data-href="strip" class="dance-directions__item popup-link">
+                                        <span class="dance-directions__image">
                                             <img src="images/dance-directions/dance-directions_8.webp"
                                                 alt="Преподователь Мария Кузнецова">
-                                        </figure>
-                                        <div class="dance-directions__info">
-                                            <p class="dance-directions__text">
+                                        </span>
+                                        <span class="dance-directions__info">
+                                            <b class="dance-directions__text">
                                                 Strip
-                                            </p>
-                                        </div>
-                                    </a>
+                                            </b>
+                                        </span>
+                                    </button>
                                     <!-- modal-start -->
                                     <section id="strip" class="popup popup__directions" role="alert">
 
@@ -1948,10 +1947,10 @@
                                                                     </li>
                                                                 </ul>
 
-                                                                <a href="#feedback-classes__strip"
+                                                                <button data-href="feedback-classes__strip"
                                                                     class="directions__button pink-btn btn popup-link">
                                                                     Записаться на пробное занятие
-                                                                </a>
+                                                                </button>
 
                                                             </div>
 
@@ -2013,10 +2012,10 @@
                                                                     </li>
                                                                 </ul>
 
-                                                                <a href="#feedback-classes__strip"
+                                                                <button data-href="feedback-classes__strip"
                                                                     class="directions__button pink-btn btn popup-link">
                                                                     Записаться на пробное занятие
-                                                                </a>
+                                                                </button>
 
                                                             </div>
 
@@ -2066,10 +2065,10 @@
                                                                     </li>
                                                                 </ul>
 
-                                                                <a href="#feedback-classes__strip"
+                                                                <button data-href="feedback-classes__strip"
                                                                     class="directions__button pink-btn btn popup-link">
                                                                     Записаться на пробное занятие
-                                                                </a>
+                                                                </button>
 
                                                             </div>
 
@@ -2092,7 +2091,7 @@
                                                     aria-label="закрыть модальное окно кнопка"></button>
 
                                                 <div class="feedback__popup">
-                                                    <form class="feedback__form" action="#" method="post">
+                                                    <form class="feedback__form form" action="#" method="post">
 
                                                         <fieldset class="feedback__trial-lesson">
                                                             <h3 class="feeadback-classes__title">
@@ -2178,17 +2177,17 @@
                                 </div>
 
                                 <div class="dance-directions__wrapper">
-                                    <a href="#stretching" class="dance-directions__item popup-link">
-                                        <figure class="dance-directions__image">
+                                    <button data-href="stretching" class="dance-directions__item popup-link">
+                                        <span class="dance-directions__image">
                                             <img src="images/dance-directions/dance-directions_9.webp"
                                                 alt="Преподователь Ася Гурина">
-                                        </figure>
-                                        <div class="dance-directions__info">
-                                            <p class="dance-directions__text">
+                                        </span>
+                                        <span class="dance-directions__info">
+                                            <b class="dance-directions__text">
                                                 Растяжка
-                                            </p>
-                                        </div>
-                                    </a>
+                                            </b>
+                                        </span>
+                                    </button>
                                     <!-- modal-start -->
                                     <section id="stretching" class="popup popup__directions" role="alert">
 
@@ -2254,10 +2253,10 @@
                                                                     </li>
                                                                 </ul>
 
-                                                                <a href="#feedback-classes__stretching"
+                                                                <button data-href="feedback-classes__stretching"
                                                                     class="directions__button pink-btn btn popup-link">
                                                                     Записаться на пробное занятие
-                                                                </a>
+                                                                </button>
 
                                                             </div>
 
@@ -2307,10 +2306,10 @@
                                                                     </li>
                                                                 </ul>
 
-                                                                <a href="#feedback-classes__stretching"
+                                                                <button data-href="feedback-classes__stretching"
                                                                     class="directions__button pink-btn btn popup-link">
                                                                     Записаться на пробное занятие
-                                                                </a>
+                                                                </button>
 
                                                             </div>
 
@@ -2333,7 +2332,7 @@
                                                     aria-label="закрыть модальное окно кнопка"></button>
 
                                                 <div class="feedback__popup">
-                                                    <form class="feedback__form" action="#" method="post">
+                                                    <form class="feedback__form form" action="#" method="post">
 
                                                         <fieldset class="feedback__trial-lesson">
                                                             <h3 class="feeadback-classes__title">
@@ -2416,17 +2415,17 @@
                                 </div>
 
                                 <div class="dance-directions__wrapper">
-                                    <a href="#twerk" class="dance-directions__item popup-link">
-                                        <figure class="dance-directions__image">
+                                    <button data-href="twerk" class="dance-directions__item popup-link">
+                                        <span class="dance-directions__image">
                                             <img src="images/dance-directions/dance-directions_10.webp"
                                                 alt="Преподователь Варвара Форальберг">
-                                        </figure>
-                                        <div class="dance-directions__info">
-                                            <p class="dance-directions__text">
+                                        </span>
+                                        <span class="dance-directions__info">
+                                            <b class="dance-directions__text">
                                                 Twerk
-                                            </p>
-                                        </div>
-                                    </a>
+                                            </b>
+                                        </span>
+                                    </button>
                                     <!-- modal-start -->
                                     <section id="twerk" class="popup popup__directions" role="alert">
 
@@ -2483,10 +2482,10 @@
                                                                     </li>
                                                                 </ul>
 
-                                                                <a href="#feedback-classes__twerk"
+                                                                <button data-href="feedback-classes__twerk"
                                                                     class="directions__button pink-btn btn popup-link">
                                                                     Записаться на пробное занятие
-                                                                </a>
+                                                                </button>
 
                                                             </div>
 
@@ -2509,7 +2508,7 @@
                                                     aria-label="закрыть модальное окно кнопка"></button>
 
                                                 <div class="feedback__popup">
-                                                    <form class="feedback__form" action="#" method="post">
+                                                    <form class="feedback__form form" action="#" method="post">
 
                                                         <fieldset class="feedback__trial-lesson">
                                                             <h3 class="feeadback-classes__title">
@@ -2589,17 +2588,17 @@
                                 </div>
 
                                 <div class="dance-directions__wrapper">
-                                    <a href="#reggaeton" class="dance-directions__item popup-link">
-                                        <figure class="dance-directions__image">
+                                    <button data-href="reggaeton" class="dance-directions__item popup-link">
+                                        <span class="dance-directions__image">
                                             <img src="images/dance-directions/dance-directions_11.webp"
                                                 alt="Преподователь Кристина Новикова">
-                                        </figure>
-                                        <div class="dance-directions__info">
-                                            <p class="dance-directions__text">
+                                        </span>
+                                        <span class="dance-directions__info">
+                                            <b class="dance-directions__text">
                                                 Reggaeton
-                                            </p>
-                                        </div>
-                                    </a>
+                                            </b>
+                                        </span>
+                                    </button>
                                     <!-- modal-start -->
                                     <section id="reggaeton" class="popup popup__directions" role="alert">
 
@@ -2656,10 +2655,10 @@
                                                                     </li>
                                                                 </ul>
 
-                                                                <a href="#feedback-classes__reggaeton"
+                                                                <button data-href="feedback-classes__reggaeton"
                                                                     class="directions__button pink-btn btn popup-link">
                                                                     Записаться на пробное занятие
-                                                                </a>
+                                                                </button>
 
                                                             </div>
 
@@ -2709,10 +2708,10 @@
                                                                     </li>
                                                                 </ul>
 
-                                                                <a href="#feedback-classes__reggaeton"
+                                                                <button data-href="feedback-classes__reggaeton"
                                                                     class="directions__button pink-btn btn popup-link">
                                                                     Записаться на пробное занятие
-                                                                </a>
+                                                                </button>
 
                                                             </div>
 
@@ -2735,7 +2734,7 @@
                                                     aria-label="закрыть модальное окно кнопка"></button>
 
                                                 <div class="feedback__popup">
-                                                    <form class="feedback__form" action="#" method="post">
+                                                    <form class="feedback__form form" action="#" method="post">
 
                                                         <fieldset class="feedback__trial-lesson">
                                                             <h3 class="feeadback-classes__title">
@@ -2818,17 +2817,17 @@
                                 </div>
 
                                 <div class="dance-directions__wrapper">
-                                    <a href="#emancipation" class="dance-directions__item popup-link">
-                                        <figure class="dance-directions__image">
+                                    <button data-href="emancipation" class="dance-directions__item popup-link">
+                                        <span class="dance-directions__image">
                                             <img src="images/dance-directions/dance-directions_12.webp"
                                                 alt="Преподователь Виктория Борзова">
-                                        </figure>
-                                        <div class="dance-directions__info">
-                                            <p class="dance-directions__text">
+                                        </span>
+                                        <span class="dance-directions__info">
+                                            <b class="dance-directions__text">
                                                 Курс по раскрепощению
-                                            </p>
-                                        </div>
-                                    </a>
+                                            </b>
+                                        </span>
+                                    </button>
                                     <!-- modal-start -->
                                     <section id="emancipation" class="popup popup__directions" role="alert">
 
@@ -2885,10 +2884,10 @@
                                                                     </li>
                                                                 </ul>
 
-                                                                <a href="#feedback-classes__emancipation"
+                                                                <button data-href="feedback-classes__emancipation"
                                                                     class="directions__button pink-btn btn popup-link">
                                                                     Записаться на пробное занятие
-                                                                </a>
+                                                                </button>
 
                                                             </div>
 
@@ -2911,7 +2910,7 @@
                                                     aria-label="закрыть модальное окно кнопка"></button>
 
                                                 <div class="feedback__popup">
-                                                    <form class="feedback__form" action="#" method="post">
+                                                    <form class="feedback__form form" action="#" method="post">
 
                                                         <fieldset class="feedback__trial-lesson">
                                                             <h3 class="feeadback-classes__title">
@@ -2991,17 +2990,17 @@
                                 </div>
 
                                 <div class="dance-directions__wrapper">
-                                    <a href="#vogue" class="dance-directions__item popup-link">
-                                        <figure class="dance-directions__image">
+                                    <button data-href="vogue" class="dance-directions__item popup-link">
+                                        <span class="dance-directions__image">
                                             <img src="images/dance-directions/dance-directions_13.webp"
                                                 alt="Преподователь Арина Любимова">
-                                        </figure>
-                                        <div class="dance-directions__info">
-                                            <p class="dance-directions__text">
+                                        </span>
+                                        <span class="dance-directions__info">
+                                            <b class="dance-directions__text">
                                                 Vogue
-                                            </p>
-                                        </div>
-                                    </a>
+                                            </b>
+                                        </span>
+                                    </button>
                                     <!-- modal-start -->
                                     <section id="vogue" class="popup popup__directions" role="alert">
 
@@ -3058,10 +3057,10 @@
                                                                     </li>
                                                                 </ul>
 
-                                                                <a href="#feedback-classes__vogue"
+                                                                <button data-href="feedback-classes__vogue"
                                                                     class="directions__button pink-btn btn popup-link">
                                                                     Записаться на пробное занятие
-                                                                </a>
+                                                                </button>
 
                                                             </div>
 
@@ -3084,7 +3083,7 @@
                                                     aria-label="закрыть модальное окно кнопка"></button>
 
                                                 <div class="feedback__popup">
-                                                    <form class="feedback__form" action="#" method="post">
+                                                    <form class="feedback__form form" action="#" method="post">
 
                                                         <fieldset class="feedback__trial-lesson">
                                                             <h3 class="feeadback-classes__title">
@@ -3164,17 +3163,17 @@
                                 </div>
 
                                 <div class="dance-directions__wrapper">
-                                    <a href="#salsa" class="dance-directions__item popup-link">
-                                        <figure class="dance-directions__image">
+                                    <button data-href="salsa" class="dance-directions__item popup-link">
+                                        <span class="dance-directions__image">
                                             <img src="images/dance-directions/dance-directions_14.webp"
                                                 alt="Преподователь Марина Тарасова">
-                                        </figure>
-                                        <div class="dance-directions__info">
-                                            <p class="dance-directions__text">
+                                        </span>
+                                        <span class="dance-directions__info">
+                                            <b class="dance-directions__text">
                                                 Сальса
-                                            </p>
-                                        </div>
-                                    </a>
+                                            </b>
+                                        </span>
+                                    </button>
                                     <!-- modal-start -->
                                     <section id="salsa" class="popup popup__directions" role="alert">
 
@@ -3231,10 +3230,10 @@
                                                                     </li>
                                                                 </ul>
 
-                                                                <a href="#feedback-classes__salsa"
+                                                                <button data-href="feedback-classes__salsa"
                                                                     class="directions__button pink-btn btn popup-link">
                                                                     Записаться на пробное занятие
-                                                                </a>
+                                                                </button>
 
                                                             </div>
 
@@ -3257,7 +3256,7 @@
                                                     aria-label="закрыть модальное окно кнопка"></button>
 
                                                 <div class="feedback__popup">
-                                                    <form class="feedback__form" action="#" method="post">
+                                                    <form class="feedback__form form" action="#" method="post">
 
                                                         <fieldset class="feedback__trial-lesson">
                                                             <h3 class="feeadback-classes__title">
@@ -3337,17 +3336,17 @@
                                 </div>
 
                                 <div class="dance-directions__wrapper">
-                                    <a href="#bachata" class="dance-directions__item popup-link">
-                                        <figure class="dance-directions__image">
+                                    <button data-href="bachata" class="dance-directions__item popup-link">
+                                        <span class="dance-directions__image">
                                             <img src="images/dance-directions/dance-directions_15.webp"
                                                 alt="Преподователь Марина Тарасова">
-                                        </figure>
-                                        <div class="dance-directions__info">
-                                            <p class="dance-directions__text">
+                                        </span>
+                                        <span class="dance-directions__info">
+                                            <b class="dance-directions__text">
                                                 Бачата
-                                            </p>
-                                        </div>
-                                    </a>
+                                            </b>
+                                        </span>
+                                    </button>
                                     <!-- modal-start -->
                                     <section id="bachata" class="popup popup__directions" role="alert">
 
@@ -3404,10 +3403,10 @@
                                                                     </li>
                                                                 </ul>
 
-                                                                <a href="#feedback-classes__bachata"
+                                                                <button data-href="feedback-classes__bachata"
                                                                     class="directions__button pink-btn btn popup-link">
                                                                     Записаться на пробное занятие
-                                                                </a>
+                                                                </button>
 
                                                             </div>
 
@@ -3431,7 +3430,7 @@
                                                 <a class="popup__close " href="#header"></a>
 
                                                 <div class="feedback__popup">
-                                                    <form class="feedback__form" action="#" method="post">
+                                                    <form class="feedback__form form" action="#" method="post">
 
                                                         <fieldset class="feedback__trial-lesson">
                                                             <h3 class="feeadback-classes__title">
@@ -3511,17 +3510,17 @@
                                 </div>
 
                                 <div class="dance-directions__wrapper">
-                                    <a href="#dancehall" class="dance-directions__item popup-link">
-                                        <figure class="dance-directions__image">
+                                    <button data-href="dancehall" class="dance-directions__item popup-link">
+                                        <span class="dance-directions__image">
                                             <img src="images/dance-directions/dance-directions_16.webp"
                                                 alt="Преподователь Ирина Баранова">
-                                        </figure>
-                                        <div class="dance-directions__info">
-                                            <p class="dance-directions__text">
+                                        </span>
+                                        <span class="dance-directions__info">
+                                            <b class="dance-directions__text">
                                                 Dancehall
-                                            </p>
-                                        </div>
-                                    </a>
+                                            </b>
+                                        </span>
+                                    </button>
                                     <!-- modal-start -->
                                     <section id="dancehall" class="popup popup__directions" role="alert">
 
@@ -3578,10 +3577,10 @@
                                                                     </li>
                                                                 </ul>
 
-                                                                <a href="#feedback-classes__dancehall"
+                                                                <button data-href="feedback-classes__dancehall"
                                                                     class="directions__button pink-btn btn popup-link">
                                                                     Записаться на пробное занятие
-                                                                </a>
+                                                                </button>
 
                                                             </div>
 
@@ -3631,10 +3630,10 @@
                                                                     </li>
                                                                 </ul>
 
-                                                                <a href="#feedback-classes__dancehall"
+                                                                <button data-href="feedback-classes__dancehall"
                                                                     class="directions__button pink-btn btn popup-link">
                                                                     Записаться на пробное занятие
-                                                                </a>
+                                                                </button>
 
                                                             </div>
 
@@ -3657,7 +3656,7 @@
                                                     aria-label="закрыть модальное окно кнопка"></button>
 
                                                 <div class="feedback__popup">
-                                                    <form class="feedback__form" action="#" method="post">
+                                                    <form class="feedback__form form" action="#" method="post">
 
                                                         <fieldset class="feedback__trial-lesson">
                                                             <h3 class="feeadback-classes__title">
@@ -4037,9 +4036,9 @@
                                 </div>
 
                             </div>
-                            <a href="#pass-classes" class="pass-classes__link pink-btn btn popup-link">
+                            <button data-href="pass-classes" class="pass-classes__link pink-btn btn popup-link">
                                 Записаться на пробное занятие
-                            </a>
+                            </button>
                             <!-- modal-start -->
                             <section id="pass-classes" class="popup" role="alert">
 
@@ -4049,7 +4048,7 @@
                                             aria-label="закрыть модальное окно кнопка"></button>
 
                                         <div class="feedback__popup">
-                                            <form class="feedback__form" action="#" method="post">
+                                            <form class="feedback__form form" action="#" method="post">
 
                                                 <fieldset>
 
@@ -4316,14 +4315,14 @@
                             </h2>
                             <div class="cost-classes__inner">
 
-                                <a href="#feedback__trial-lesson" class="cost-classes__link item-hover popup-link">
-                                    <p class="cost-classes__text">
+                                <button data-href="feedback__trial-lesson" class="cost-classes__link item-hover popup-link">
+                                    <span class="cost-classes__text">
                                         Первое пробное занятие
-                                    </p>
-                                    <p class="cost-classes__text">
+                                    </span>
+                                    <span class="cost-classes__text">
                                         300 р.
-                                    </p>
-                                </a>
+                                    </span>
+                                </button>
                                 <!-- modal-start -->
                                 <section id="feedback__trial-lesson" class="popup">
 
@@ -4333,7 +4332,7 @@
                                                 aria-label="закрыть модальное окно кнопка"></button>
 
                                             <div class="feedback__popup">
-                                                <form class="feedback__form" action="#" method="post">
+                                                <form class="feedback__form form" action="#" method="post">
 
                                                     <h3 class="feeadback-classes__title">
                                                         <span class="text-pink">Записаться</span> на пробное занятие
@@ -4403,14 +4402,14 @@
                                 </section>
                                 <!-- modal-end -->
 
-                                <a href="#one-time_lesson" class="cost-classes__link item-hover popup-link">
-                                    <p class="cost-classes__text">
+                                <button data-href="one-time_lesson" class="cost-classes__link item-hover popup-link">
+                                    <span class="cost-classes__text">
                                         Разовое занятие
-                                    </p>
-                                    <p class="cost-classes__text">
+                                    </span>
+                                    <span class="cost-classes__text">
                                         700 р.
-                                    </p>
-                                </a>
+                                    </span>
+                                </button>
                                 <!-- modal-start -->
                                 <section id="one-time_lesson" class="popup">
 
@@ -4420,7 +4419,7 @@
                                                 aria-label="закрыть модальное окно кнопка"></button>
 
                                             <div class="feedback__popup">
-                                                <form class="feedback__form" action="#" method="post">
+                                                <form class="feedback__form form" action="#" method="post">
 
                                                     <h3 class="feeadback-classes__title">
                                                         Разовое занятие
@@ -4490,17 +4489,17 @@
                                 </section>
                                 <!-- modal-end -->
 
-                                <a href="#feedback__eight-lessons" class="cost-classes__link item-hover popup-link">
-                                    <p class="cost-classes__text">
+                                <button data-href="feedback__eight-lessons" class="cost-classes__link item-hover popup-link">
+                                    <span class="cost-classes__text">
                                         8 занятий
                                         <span class="cost-classes__subscription">
                                             Действие абонемента 30 дней
                                         </span>
-                                    </p>
-                                    <p class="cost-classes__text">
+                                    </span>
+                                    <span class="cost-classes__text">
                                         5 000 р.
-                                    </p>
-                                </a>
+                                    </span>
+                                </button>
                                 <!-- modal-start -->
                                 <section id="feedback__eight-lessons" class="popup">
 
@@ -4510,7 +4509,7 @@
                                                 aria-label="закрыть модальное окно кнопка"></button>
 
                                             <div class="feedback__popup">
-                                                <form class="feedback__form" action="#" method="post">
+                                                <form class="feedback__form form" action="#" method="post">
 
                                                     <h3 class="feeadback-classes__title">
                                                         Купить абонемент
@@ -4534,7 +4533,7 @@
                                                             <span class="feedback__phone-text feedback__text">Ваш
                                                                 телефон</span>
                                                             <input type="tel" name="feedback__eight-lessons-phone"
-                                                                value="phone" placeholder="+7 (999) 999-99-99">
+                                                                value="" placeholder="+7 (999) 999-99-99">
                                                         </label>
 
                                                     </fieldset>
@@ -4580,17 +4579,17 @@
                                 </section>
                                 <!-- modal-end -->
 
-                                <a href="#feedback__sixteen-classes" class="cost-classes__link item-hover popup-link">
-                                    <p class="cost-classes__text">
+                                <button data-href="feedback__sixteen-classes" class="cost-classes__link item-hover popup-link">
+                                    <span class="cost-classes__text">
                                         16 занятий
                                         <span class="cost-classes__subscription">
                                             Действие абонемента 30 дней
                                         </span>
-                                    </p>
-                                    <p class="cost-classes__text">
+                                    </span>
+                                    <span class="cost-classes__text">
                                         8 500 р.
-                                    </p>
-                                </a>
+                                    </span>
+                                </button>
                                 <!-- modal-start -->
                                 <section id="feedback__sixteen-classes" class="popup">
 
@@ -4600,7 +4599,7 @@
                                                 aria-label="закрыть модальное окно кнопка"></button>
 
                                             <div class="feedback__popup">
-                                                <form class="feedback__form" action="#" method="post">
+                                                <form class="feedback__form form" action="#" method="post">
 
                                                     <h3 class="feeadback-classes__title">
                                                         Купить абонемент
@@ -4617,14 +4616,14 @@
                                                             <span class="feedback__name-text feedback__text">Ваше
                                                                 имя</span>
                                                             <input type="text" name="feedback__sixsteen-lessons-name"
-                                                                value="name" placeholder="">
+                                                                value="" placeholder="">
                                                         </label>
 
                                                         <label>
                                                             <span class="feedback__phone-text feedback__text">Ваш
                                                                 телефон</span>
                                                             <input type="tel" name="feedback__sixsteen-lessons-phone"
-                                                                value="phone" placeholder="+7 (999) 999-99-99">
+                                                                value="" placeholder="+7 (999) 999-99-99">
                                                         </label>
 
                                                     </fieldset>
@@ -4670,17 +4669,17 @@
                                 </section>
                                 <!-- modal-end -->
 
-                                <a href="#feedback__twelve-classes" class="cost-classes__link item-hover popup-link">
-                                    <p class="cost-classes__text">
+                                <button data-href="feedback__twelve-classes" class="cost-classes__link item-hover popup-link">
+                                    <span class="cost-classes__text">
                                         12 занятий
                                         <span class="cost-classes__subscription">
                                             Действие абонемента 30 дней
                                         </span>
-                                    </p>
-                                    <p class="cost-classes__text">
+                                    </span>
+                                    <span class="cost-classes__text">
                                         6 500 р.
-                                    </p>
-                                </a>
+                                    </span>
+                                </button>
                                 <!-- modal-start -->
                                 <section id="feedback__twelve-classes" class="popup">
 
@@ -4690,7 +4689,7 @@
                                                 aria-label="закрыть модальное окно кнопка"></button>
 
                                             <div class="feedback__popup">
-                                                <form class="feedback__form" action="#" method="post">
+                                                <form class="feedback__form form" action="#" method="post">
 
                                                     <h3 class="feeadback-classes__title">
                                                         Купить абонемент
@@ -4760,17 +4759,17 @@
                                 </section>
                                 <!-- modal-end -->
 
-                                <a href="#feedback__unlimited-classes" class="cost-classes__link item-hover popup-link">
-                                    <p class="cost-classes__text">
+                                <button data-href="feedback__unlimited-classes" class="cost-classes__link item-hover popup-link">
+                                    <span class="cost-classes__text">
                                         Безлимит на месяц
                                         <span class="cost-classes__subscription">
                                             Действие абонемента 30 дней
                                         </span>
-                                    </p>
-                                    <p class="cost-classes__text">
+                                    </span>
+                                    <span class="cost-classes__text">
                                         9 000 р.
-                                    </p>
-                                </a>
+                                    </span>
+                                </button>
                                 <!-- modal-start -->
                                 <section id="feedback__unlimited-classes" class="popup">
 
@@ -4780,7 +4779,7 @@
                                                 aria-label="закрыть модальное окно кнопка"></button>
 
                                             <div class="feedback__popup">
-                                                <form class="feedback__form" action="#" method="post">
+                                                <form class="feedback__form form" action="#" method="post">
 
                                                     <h3 class="feeadback-classes__title">
                                                         Купить абонемент
@@ -4850,17 +4849,17 @@
                                 </section>
                                 <!-- modal-end -->
 
-                                <a href="#feedback__fourteen-classes" class="cost-classes__link item-hover popup-link">
-                                    <p class="cost-classes__text">
+                                <button data-href="feedback__fourteen-classes" class="cost-classes__link item-hover popup-link">
+                                    <span class="cost-classes__text">
                                         14 занятий
                                         <span class="cost-classes__subscription">
                                             Действие абонемента 60 дней
                                         </span>
-                                    </p>
-                                    <p class="cost-classes__text">
+                                    </span>
+                                    <span class="cost-classes__text">
                                         7 000 р.
-                                    </p>
-                                </a>
+                                    </span>
+                                </button>
                                 <!-- modal-start -->
                                 <section id="feedback__fourteen-classes" class="popup">
 
@@ -4870,7 +4869,7 @@
                                                 aria-label="закрыть модальное окно кнопка"></button>
 
                                             <div class="feedback__popup">
-                                                <form class="feedback__form" action="#" method="post">
+                                                <form class="feedback__form form" action="#" method="post">
 
                                                     <h3 class="feeadback-classes__title">
                                                         Купить абонемент
@@ -4940,14 +4939,14 @@
                                 </section>
                                 <!-- modal-end -->
 
-                                <a href="#feedback__individual-lesson" class="cost-classes__link item-hover popup-link">
-                                    <p class="cost-classes__text">
+                                <button data-href="feedback__individual-lesson" class="cost-classes__link item-hover popup-link">
+                                    <span class="cost-classes__text">
                                         Индивидуальное занятие
-                                    </p>
-                                    <p class="cost-classes__text">
+                                    </span>
+                                    <span class="cost-classes__text">
                                         2 200 р.
-                                    </p>
-                                </a>
+                                    </span>
+                                </button>
                                 <!-- modal-start -->
                                 <section id="feedback__individual-lesson" class="popup">
 
@@ -4957,7 +4956,7 @@
                                                 aria-label="закрыть модальное окно кнопка"></button>
 
                                             <div class="feedback__popup">
-                                                <form class="feedback__form" action="#" method="post">
+                                                <form class="feedback__form form" action="#" method="post">
 
                                                     <h3 class="feeadback-classes__title">
                                                         Купить абонемент
@@ -5028,12 +5027,12 @@
                                 <!-- modal-end -->
 
                             </div>
-                            <a href="#feedback-price" class="cost-classes__btn pink-btn btn popup-link">
+                            <button data-href="feedback-price" class="cost-classes__btn pink-btn btn popup-link">
                                 Записаться<br> на пробное занятие
-                                <figure class="cost-classes__image">
+                                <span class="cost-classes__image">
                                     <img src="images/cost-classes/cost-classes_card.webp" alt="Карта абонемента клуба">
-                                </figure>
-                            </a>
+                                </span>
+                            </button>
                             <!-- modal-start -->
                             <section id="feedback-price" class="popup" role="alert">
 
@@ -5043,7 +5042,7 @@
                                             aria-label="закрыть модальное окно кнопка"></button>
 
                                         <div class="feedback__popup">
-                                            <form class="feedback__form" action="#" method="post">
+                                            <form class="feedback__form form" action="#" method="post">
 
                                                 <fieldset>
 
@@ -5137,9 +5136,9 @@
                                             Получишь огромное количество крутых фото и впечатлений от ежедневных тусовок
                                         </li>
                                     </ul>
-                                    <a href="#camp-program" class="dance-camp__btn pink-btn btn popup-link">
+                                    <button data-href="camp-program" class="dance-camp__btn pink-btn btn popup-link">
                                         Получить<br> программу лагеря
-                                    </a>
+                                    </button>
 
                                     <!-- modal-start -->
                                     <section id="camp-program" class="popup">
@@ -5150,7 +5149,7 @@
                                                     aria-label="закрыть модальное окно кнопка"></button>
 
                                                 <div class="feedback__popup">
-                                                    <form class="feedback__form" action="#" method="post">
+                                                    <form class="feedback__form form" action="#" method="post">
 
                                                         <h3 class="feeadback-classes__title">
                                                             Получить программу танцевального лагеря
@@ -5300,9 +5299,9 @@
                                             <s>600 &#8381;</s>
                                         </span>
                                     </div>
-                                    <a href="#feedback-lesson" class="trial-lesson__btn pink-btn btn popup-link">
+                                    <button data-href="feedback-lesson" class="trial-lesson__btn pink-btn btn popup-link">
                                         Записаться<br>на пробное занятие
-                                    </a>
+                                    </button>
 
 
                                     <div class="trial-lesson__pol">
@@ -5333,7 +5332,7 @@
                                     aria-label="закрыть модальное окно кнопка"></button>
 
                                 <div class="feedback__popup">
-                                    <form class="feedback__form" action="#" method="post">
+                                    <form class="feedback__form form" action="#" method="post">
 
                                         <fieldset>
 
@@ -5412,10 +5411,11 @@
                                 <ol class="popular-questions__list">
 
                                     <li class="popular-questions__item item-hover">
-                                        <button type="button" class="popular-questions__heading">
+                                        <button type="button" data-name="accordeon-title" class="popular-questions__heading">
                                             А что, если у меня не получится?
                                         </button>
-                                        <p class="popular-questions__text">
+                                        <div class="popular-questions__text">
+                                            <p class="popular-questions__info">
                                             Мы существуем уже более 15 лет и за это время обучили более 2000 девушек
                                             классно и уверенно двигаться.
                                             У нас есть собственная методика, рассчитанная именно на новичков. Также наши
@@ -5423,52 +5423,59 @@
                                             занятия, чтобы вы могли повторить дома.
                                             На каждом занятии преподаватель медленно объясняет, как выполнять то или
                                             иное движение, так что вы сможете легко освоить любой стиль.
-                                        </p>
-                                    </li>
-
-                                    <li class="popular-questions__item item-hover">
-                                        <button type="button" class="popular-questions__heading">
-                                            В какие группы я могу ходить по абонементу?
-                                        </button>
-                                        <p class="popular-questions__text">
-                                            Абонемент не привязан к конкретной группе, вы можете приобрести абонемент,
-                                            скажем, на 16 занятий и посещать любые группы. Занятия просто будут
-                                            списываться с вашего абонемента
-                                        </p>
-                                    </li>
-
-                                    <li class="popular-questions__item item-hover">
-                                        <button type="button" class="popular-questions__heading">
-                                            Что надеть на занятие?
-                                        </button>
-                                        <div class="popular-questions__text">
-                                            <h3 class="popular-questions__subheading">
-                                                Как правило, наши ученики одеваются на занятия таким образом:
-                                            </h3>
-                                            <ul class="popular-questions__sublist">
-                                                <li class="popular-questions__subitem list__item">
-                                                    на клубные направления: кеды, либо кроссовки, на стрип пластику:
-                                                    каблуки
-                                                </li>
-                                                <li class="popular-questions__subitem list__item">
-                                                    леггинсы, лосины, либо шорты
-                                                </li>
-                                                <li class="popular-questions__subitem list__item">
-                                                    футболка, топ
-                                                </li>
-                                            </ul>
+                                            </p>
                                         </div>
                                     </li>
 
                                     <li class="popular-questions__item item-hover">
-                                        <button type="button" class="popular-questions__heading">
+                                        <button type="button" data-name="accordeon-title" class="popular-questions__heading">
+                                            В какие группы я могу ходить по абонементу?
+                                        </button>
+                                        <div class="popular-questions__text">
+                                            <p class="popular-questions__info">
+                                                Абонемент не привязан к конкретной группе, вы можете приобрести абонемент,
+                                                скажем, на 16 занятий и посещать любые группы. Занятия просто будут
+                                                списываться с вашего абонемента
+                                            </p>
+                                        </div>
+                                    </li>
+
+                                    <li class="popular-questions__item item-hover">
+                                        <button type="button" data-name="accordeon-title" class="popular-questions__heading">
+                                            Что надеть на занятие?
+                                        </button>
+                                        <div class="popular-questions__text">
+                                            <div class="popular-questions__info">
+                                                <h3 class="popular-questions__subheading">
+                                                    Как правило, наши ученики одеваются на занятия таким образом:
+                                                </h3>
+                                                <ul class="popular-questions__sublist">
+                                                    <li class="popular-questions__subitem list__item">
+                                                        на клубные направления: кеды, либо кроссовки, на стрип пластику:
+                                                        каблуки
+                                                    </li>
+                                                    <li class="popular-questions__subitem list__item">
+                                                        леггинсы, лосины, либо шорты
+                                                    </li>
+                                                    <li class="popular-questions__subitem list__item">
+                                                        футболка, топ
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="popular-questions__item item-hover">
+                                        <button type="button" data-name="accordeon-title" class="popular-questions__heading">
                                             Что делать, если раньше я не занималась танцами совсем?
                                         </button>
-                                        <p class="popular-questions__text">
-                                            Согласитесь , мы же не ходим в парикмахерскую с уже готовой причёской?
-                                            Наша школа и рассчитана на тех, кто никогда не занимался танцами. Мы всему
-                                            обучаем с нуля. Можно заниматься с любым уровнем подготовки.
-                                        </p>
+                                        <div class="popular-questions__text">
+                                            <p class="popular-questions__info">
+                                                Согласитесь , мы же не ходим в парикмахерскую с уже готовой причёской?
+                                                Наша школа и рассчитана на тех, кто никогда не занимался танцами. Мы всему
+                                                обучаем с нуля. Можно заниматься с любым уровнем подготовки.
+                                            </p>
+                                        </div>
                                     </li>
 
                                 </ol>
@@ -5613,6 +5620,9 @@
         
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="js/slick.min.js"></script>
+        <script src="js/modal.js"></script>
+        <script src="js/accordeon.js"></script>
+        <script src="js/hidden-images.js"></script>
         <script src="js/main.js"></script>
 
     </body>
