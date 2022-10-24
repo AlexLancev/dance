@@ -192,6 +192,19 @@ a{
             transform: translateY(-1px);
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 .container{
     max-width: 1230px;
     padding: 0 10px;
@@ -205,6 +218,7 @@ a{
 button{
     cursor: pointer;
     border: 0;
+    padding: 0;
     background-color: transparent;
 }
 
@@ -219,6 +233,7 @@ button{
         -ms-flex-align: center;
             align-items: center;
     padding: 15px 0;
+    flex-wrap: wrap;
 }
 
 .header__inner > *{
@@ -234,6 +249,7 @@ button{
 }
 
 .logo-link {
+    width: 220px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -274,6 +290,12 @@ button{
 }
 
 .popup-maps__title {
+    display: block;
+    font-family: 'Museo Cyrl', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.1;
+    color: #000000;
     text-align: center;
     margin-bottom: 30px;
 }
@@ -643,7 +665,9 @@ button{
 .dance-directions__item {
     position: relative;
     z-index: 1;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: inherit;
     width: 100%;
     border-radius: 20px;
     background-color: #fcf5f5;
@@ -670,6 +694,7 @@ button{
 }
 
 .dance-directions__image {
+    display: block;
     position: relative;
     border-radius: 20px;  
 }
@@ -685,6 +710,7 @@ button{
 }
 
 .dance-directions__info {
+    display: block;
     text-align: center;
     padding: 15px;
 }
@@ -1405,6 +1431,8 @@ button{
 }
 
 .cost-classes__text {
+    display: block;
+    text-align: left;
     max-width: 220px;
     font-weight: 700;
 }
@@ -1429,6 +1457,7 @@ button{
 }
 
 .cost-classes__image {
+    display: block;
     position: absolute;
     right: -70px;
     width: 100px;
@@ -1771,8 +1800,13 @@ button{
 }
 
 .popular-questions__text {
-    padding: 5px 20px 10px;
-    display: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.popular-questions__info {
+    padding: 10px;
 }
 
 .popular-questions__subheading{
@@ -3116,6 +3150,10 @@ body.lock {
 
 
 @media (max-width: 600px){
+
+    .logo-link {
+        width: 184px;
+    }
 
     .school-presentation__list{
         display: none;
