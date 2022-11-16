@@ -1,22 +1,25 @@
-const accordeonTitle = document.querySelectorAll('[data-name="accordeon-title"]');
+const accordeon = () => {
 
-accordeonTitle.forEach((el) => {
-    el.addEventListener('click', () => {
+    const accordeonTitle = document.querySelectorAll('[data-name="accordeon-title"]');
 
-        el.classList.toggle('active');
+    accordeonTitle.forEach((el) => {
+        el.addEventListener('click', () => {
 
-        let content = el.nextElementSibling;
-        
-        if(content.style.maxHeight) {
+            el.classList.toggle('active');
+            let content = el.nextElementSibling;
 
-            document.querySelectorAll('.popular-questions__text').forEach((el) => el.style.maxHeight = null);
+            if (content.style.maxHeight) {
 
-        } else {
+                content.style.maxHeight = '';
 
-            document.querySelectorAll('.popular-questions__text').forEach((el) => el.style.maxHeight = null);
-            content.style.maxHeight = content.scrollHeight + 'px';
+            } else {
 
-        };
+                content.style.maxHeight = content.scrollHeight + 'px';
 
+            };
+        });
     });
-});
+
+}
+
+accordeon();
